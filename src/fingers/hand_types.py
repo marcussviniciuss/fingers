@@ -6,7 +6,6 @@ import numpy as np
 @dataclass
 class HandResult:
     handedness_label: str
-    # Landmarks em coordenadas de pixel: shape (21, 2) => (x, y)
     pixel_landmarks: np.ndarray
 
 

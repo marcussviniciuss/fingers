@@ -10,7 +10,6 @@ class CameraStream:
         if not self._cap.isOpened():
             raise RuntimeError(f"Não foi possível abrir a câmera de índice {camera_index}")
         
-        # Define resolução baixa para melhor performance
         self._cap.set(cv2.CAP_PROP_FRAME_WIDTH, CAMERA_WIDTH)
         self._cap.set(cv2.CAP_PROP_FRAME_HEIGHT, CAMERA_HEIGHT)
 
